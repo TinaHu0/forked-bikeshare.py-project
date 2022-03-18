@@ -1,19 +1,5 @@
 # BikeShare Project Python with pandas
-    """
-I‘ve used jupyterlab as my editor for this project
-I installed jypterlab with:
-    pip install jupyerlab 
-## Porject Overview
-This is a project to make use of Python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. 
-The data files are 'chicago.csv, new_york_city.csv and washington.csv' which are provided by Motivate, a bike system provider fro many major cites in the United States.
-In this project we will learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics. 
-    """
-## Running The Program
-    """
-I‘ve used jupyterlab as my editor for this project
-I installed jypterlab with:
-    pip install jupyerlab 
-    """
+
 import numpy as np
 import pandas as pd
 import time
@@ -23,52 +9,9 @@ city_data = { 'chicago': 'chicago.csv',
               'new york': 'new_york.csv',
               'washington': 'washington.csv' }
 
-## Data sets
-    """
-Data are provided for the first half of 2017 for three cities. All three data files contain the same core six columns:
-    Start Time
-    End Time
-    Trip Time
-    Start Station
-    End Station
-    User Type
-While in Chicago and New York City files there are two extra columns:
-    Gender
-    Birth Year   
-    """
-## Question
-    """
-    1 Popular times of travel (i.e., occurs most often in the start time)
-        most common month
-        most common day of week
-        most common hour of day
-    
-    2 Popular stations and trip
-        most common start station
-        most common end station
-        most common trip from start to end (i.e., most frequent combination of start station and end station)
 
-    3 Trip duration
-        total travel time
-        average travel time
-
-    4 User info
-        counts of each user type
-        counts of each gender (only available for NYC and Chicago)
-        earliest, most recent, most common year of birth (only available for NYC and Chicago)
-        
-    """
 def get_filters():
-    """
-    Asks user to specify a city, month, and day to analyze.
-
-    Returns:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    """
-    print("Hello! Let\"s explore some US bikeshare data!")
-    
+       
     # TO DO: get user input for city (chicago, new york city, washington). 
          
     # run this loop to ensure correct user input is selected, otherwise repeat
@@ -168,8 +111,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
-
+   
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
@@ -189,8 +131,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
- 
+   
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
@@ -216,8 +157,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
-
+  
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
