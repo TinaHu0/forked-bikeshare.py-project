@@ -190,11 +190,11 @@ def display_data(df):
     start_loc = 0
     
     while True:
-        view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
+        view_data = input('\nWould you like to view 10 rows of individual trip data? Enter yes or no\n')
         if view_data.lower() != 'yes':
             return
-        start_loc += 5
-        print(df.iloc[start_loc:start_loc+5])
+        start_loc += 10
+        print(df.iloc[start_loc:start_loc+10])
 
 def main():
     while True:
