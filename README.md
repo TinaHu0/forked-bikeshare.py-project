@@ -45,3 +45,6 @@ While in Chicago and New York City files there are two extra columns:
         counts of each gender (only available for NYC and Chicago)
         earliest, most recent, most common year of birth (only available for NYC and Chicago)
         
+# added documentation branch 
+git command
+git checkout -b documentation
